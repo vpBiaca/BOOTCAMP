@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form using HTML and CSS</title>
+
+    <style>
+        body{
+            background-color: rgb(86, 214, 216);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+
+        form{
+            background-color: white;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.6);
+        }
+
+        .form-control{
+            text-align: left;
+            margin-bottom: 25px;
+        }
+        .form-control label{
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .form-control input,
+        .form-control select,
+        .form-control textarea{
+            border: 1px solid rgb(34, 178, 210);
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"]{
+            display: inline-block;
+            width: auto;
+        }
+
+        button{
+            background-color: rgb(73, 173, 203);
+            border: 1px solid rgb(63, 172, 197);
+            border-radius: 3px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 30%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            color: white;
+            margin-left: 32%;
+
+
+        }
+
+        button:hover{
+            background-color: red;
+        }
+        .title{
+            color: white;
+            margin-top: 10px;
+        }
+    </style>
+
+
+</head>
+<body>
+    <h1 class="title">Programming Survey Form</h1>
+
+    <!-- Create Form -->
+    <form id="form">
+
+        <!-- Details -->
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Name
+            </label>
+
+            <!-- Input Type Text -->
+            <input type="text" id="name" 
+                   placeholder="Enter your name" />
+        </div>
+
+        <div class="form-control">
+            <label for="email" id="label-email">
+                Email
+            </label>
+
+            <!-- Input Type Email-->
+            <input type="email" id="email" 
+                   placeholder="Enter your email" />
+        </div>
+
+        <div class="form-control">
+            <label for="age" id="label-age">
+                Age
+            </label>
+
+            <!-- Input Type Text -->
+            <input type="text" id="age" 
+                   placeholder="Enter your age" />
+        </div>
+
+        <div class="form-control">
+            <label for="role" id="label-role">
+                Which option best describes you?
+            </label>
+
+            
+
+            <!-- Dropdown options -->
+            <select name="role" id="role">
+                <option value="student">Student</option>
+                <option value="intern">Intern</option>
+                <option value="professional">
+                    Professional
+                </option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="form-control">
+            <label>
+                Year Level?
+            </label>
+
+            <!-- Input Type Radio Button -->
+            <label for="recommed-1">
+                <input type="radio" id="recommed-1" 
+                       name="year">1
+                  </input>
+            </label>
+            <label for="recommed-2">
+                <input type="radio" id="recommed-2" 
+                       name="year">2
+                  </input>
+            </label>
+            <label for="recommed-3">
+                <input type="radio" id="recommed-3" 
+                       name="year">3
+                  </input>
+            </label>
+            <label for="recommed-3">
+                <input type="radio" id="recommed-3" 
+                       name="year">4
+                  </input>
+            </label>
+            <label for="recommed-3">
+                <input type="radio" id="recommed-3" 
+                       name="year">5
+                  </input>
+            </label>
+        </div>
+
+
+        <div class="form-control">
+            <label>
+                Would you recommend DELTA PH Training
+                to a friend?
+            </label>
+
+            <!-- Input Type Radio Button -->
+            <label for="recommed-1">
+                <input type="radio" id="recommed-1" 
+                       name="recommed">Yes
+                  </input>
+            </label>
+            <label for="recommed-2">
+                <input type="radio" id="recommed-2" 
+                       name="recommed">No
+                  </input>
+            </label>
+            <label for="recommed-3">
+                <input type="radio" id="recommed-3" 
+                       name="recommed">Maybe
+                  </input>
+            </label>
+        </div>
+
+        <div class="form-control">
+            <label>Languages and Frameworks known
+                <small>(Check all that apply)</small>
+            </label>
+            <!-- Input Type Checkbox -->
+            <label for="inp-1">
+                <input type="checkbox" name="inp">C
+                  </input>
+              </label>
+            <label for="inp-2">
+                <input type="checkbox" name="inp">C++
+                  </input>
+            </label>
+            <label for="inp-3">
+                <input type="checkbox" name="inp">C#
+                  </input>
+            </label>
+            <label for="inp-4">
+                <input type="checkbox" name="inp">Java
+                  </input>
+            </label>
+            <label for="inp-5">
+                <input type="checkbox" name="inp">Python
+                  </input>
+            </label>
+            <label for="inp-6">
+                <input type="checkbox" name="inp">JavaScript
+                  </input>
+            </label>
+            <label for="inp-7">
+                <input type="checkbox" name="inp">React
+                  </input>
+            </label>
+            <label for="inp-7">
+                <input type="checkbox" name="inp">Angular
+                  </input>
+            </label>
+            <label for="inp-7">
+                <input type="checkbox" name="inp">Django
+                  </input>
+            </label>
+            <label for="inp-7">
+                <input type="checkbox" name="inp">Spring
+                  </input>
+            </label>
+        </div>
+
+        <div class="form-control">
+            <label for="comment">
+                Any comments or suggestions
+            </label>
+
+            <!-- multi-line text input control -->
+            <textarea name="comment" id="comment" rows="5"
+                      placeholder="Enter your comments/suggestions here">
+            </textarea>
+        </div>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Q1</td>
+                    <td><label for="q1"><input type="radio" name="q1" id="q1-1"></label></td>
+                    <td><label for="q1"><input type="radio" name="q1" id="q1-2"></label></td>
+                    <td><label for="q1"><input type="radio" name="q1" id="q1-3"></label></td>
+                    <td><label for="q1"><input type="radio" name="q1" id="q1-4"></label></td>
+                </tr>
+                <tr>
+                    <td>Q2</td>
+                    <td><label for="q2"><input type="radio" name="q2" id="q2-1"></label></td>
+                    <td><label for="q2"><input type="radio" name="q2" id="q2-2"></label></td>
+                    <td><label for="q2"><input type="radio" name="q2" id="q2-3"></label></td>
+                    <td><label for="q2"><input type="radio" name="q2" id="q2-4"></label></td>
+                </tr>
+                <tr>
+                    <td>Q3</td>
+                    <td><label for="q3"><input type="radio" name="q3" id="q3-1"></label></td>
+                    <td><label for="q3"><input type="radio" name="q3" id="q3-2"></label></td>
+                    <td><label for="q3"><input type="radio" name="q3" id="q3-3"></label></td>
+                    <td><label for="q3"><input type="radio" name="q3" id="q3-4"></label></td>
+                </tr>
+                <tr>
+                    <td>Q4</td>
+                    <td><label for="q4"><input type="radio" name="q4" id="q4-1"></label></td>
+                    <td><label for="q4"><input type="radio" name="q4" id="q4-2"></label></td>
+                    <td><label for="q4"><input type="radio" name="q4" id="q4-3"></label></td>
+                    <td><label for="q4"><input type="radio" name="q4" id="q4-4"></label></td>
+                </tr>
+                <tr>
+                    <td>Q5</td>
+                    <td><label for="q5"><input type="radio" name="q5" id="q5-1"></label></td>
+                    <td><label for="q5"><input type="radio" name="q5" id="q5-2"></label></td>
+                    <td><label for="q5"><input type="radio" name="q5" id="q5-3"></label></td>
+                    <td><label for="q5"><input type="radio" name="q5" id="q5-4"></label></td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <div>
+          <input type="checkbox" name="ide">Notepad ++</input>
+          <input type="checkbox" name="ide">VS Code</input>
+          <input type="checkbox" name="ide">Php Storm</input>
+        </div>
+        <!-- Multi-line Text Input Control -->
+        <button  id="btn">
+            Submit
+        </button>
+    </form>
+</body>
+</html>
